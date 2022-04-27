@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag "custom.css" %>
+
+<div class="posts">
+
+<h1>ask a question</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+
+<div>
+  <%= link_to "back to all questions", posts_path %>
+</div>
+</div>

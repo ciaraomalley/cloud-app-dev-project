@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag "custom.css" %>
+
+<p style="color: green"><%= notice %></p>
+
+
+<div class="posts">
+
+<h1>ask a question</h1>
+
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+  <% end %>
+</div>
+
+
+<div class="btn-post">
+<button type="button" class="btn btn-success"> <%= link_to "new question", new_post_path %></button>
+<button class="btn btn-success" link_to=home>back to home</button>
+</div>

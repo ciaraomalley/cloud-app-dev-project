@@ -1,0 +1,72 @@
+
+<%= stylesheet_link_tag "custom.css" %>
+
+<div>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <div>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+  <div class="posts">
+  <h2> opening hours </h2>
+      <p>
+        mon closed<br>
+        tues 10am - 4pm<br>
+        wed 10am - 4pm<br>
+        thurs 10am - 6pm<br>
+        fri 10am - 6pm<br>
+        sat 10am - 4pm<br>
+        sun 12pm - 4pm<br>
+      </p>
+  </div>
+
+  <div class="posts">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
+  
+  
+  <style>
+      .map {
+        height: 300px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+    <title>OpenLayers example</title>
+
+  
+    <h2>find our store</h2>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-6.260278, 53.341389]),
+          zoom: 17
+        })
+      });
+    </script>
+
+    <p>
+        <br>
+        100 Grafton Street,
+        <br>
+        Dublin 2
+      </p>
+    </div>
+<br>
+
+
+    
+    </div>
+  </body>
+</html>
+</div>

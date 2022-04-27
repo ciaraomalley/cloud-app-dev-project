@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "custom.css" %>
+
+<div class="posts">
+
+<div class="page_wrapper">
+<p><%= notice %></p>
+
+<%= render @post %>
+
+<div>
+  <%= link_to "edit this question", edit_post_path(@post) %> |
+  <%= link_to "back to all questions", posts_path %>
+
+  <%= button_to "remove this question", @post, method: :delete %>
+</div>
+</div>
+<div>

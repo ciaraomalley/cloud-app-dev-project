@@ -1,0 +1,112 @@
+<%= stylesheet_link_tag "custom.css" %>
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>Bootstrap Example</title>
+
+<div class="container-fluid">
+  <div class="header-img">
+    <%= image_tag "grow-header.png", :size => "auto" %>
+  </div>
+</div>
+
+ <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-8">
+             <div class="text-container">
+                 <h1 class="h1-large">welcome to grow.</h1>
+                 <p class="p-large"> your local green shop for plants, pots, seeds and advice! </br> as well as selling your favourite plants we offer a free plant advice service - just pop over to our q&a section - need watering tips or how to care for your plants while away? </p>
+                 <%= button_to "ask us anything", posts_path, class:"btn-solid-lg" %>
+             </div>
+         </div> 
+         </div> 
+     </div> 
+ </div> 
+</div>
+
+<br>
+<div class="posts">
+<div class="card-group">
+  <div class="card" >
+    <img src="https://images.unsplash.com/photo-1619423089884-bc5b70bc4e2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">monstera</h5>
+      <p class="card-text">also known as swiss cheese plant. low maintainance - lots of light and water.</p>
+      <p class="btn btn-outline-dark">  
+      <%= link_to 'Buy This Plant - €50', 'https://buy.stripe.com/test_3cs3cX0FRahfeRi3cc' %> 
+      </p>      
+      <p class="card-text"><small class="text-muted">limited remain</small></p>
+    </div>
+  </div>
+  <div class="card" >
+  <img src="https://images.unsplash.com/photo-1604762512566-f0be0fd668ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"" class="card-img-top" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">parlour palm</h5>
+      <p class="card-text">needs a little tender care and plenty of sunlight. look after this one.</p>
+      <p class="btn btn-outline-dark">  
+        <%= link_to 'Buy This Plant - €30', 'https://buy.stripe.com/test_00g6p9fAL0GF24wfYZ' %> 
+      </p>      
+      <p class="card-text"><small class="text-muted">limited remain</small></p>
+    </div>
+
+  </div>
+  <div class="card" >
+    <img src="https://images.unsplash.com/photo-1604762512526-b7ce049b5764?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">snake plant</h5>
+      <p class="card-text">the perfect green addition to your desk or tabletop. always a favourite.</p>
+      <p class="btn btn-outline-dark">  
+        <%= link_to 'Buy This Plant - €30', 'https://buy.stripe.com/test_00g6p9fAL0GF24wfYZ' %> 
+      </p>      
+      <p class="card-text"><small class="text-muted">limited remain</small></p>
+    </div>
+  </div>
+
+  <div class="card-group">
+  <div class="card" >
+    <img src="https://images.unsplash.com/photo-1619423089884-bc5b70bc4e2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">monstera</h5>
+      <p class="card-text">also known as swiss cheese plant. low maintainance - lots of light and water.</p>
+      <p class="btn btn-outline-dark">  
+        <%= link_to 'Buy This Plant - €50', 'https://buy.stripe.com/test_3cs3cX0FRahfeRi3cc' %> 
+      </p> 
+      <p class="card-text"><small class="text-muted">limited remain</small></p>
+    </div>
+  </div>
+  <div class="card">
+  <img src="https://images.unsplash.com/photo-1604762512566-f0be0fd668ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"" class="card-img-top" alt="...">
+  <div class="card-body">
+      <h5 class="card-title">parlour palm</h5>
+      <p class="card-text">needs a little tender care and plenty of sunlight. look after this one.</p>
+      <p class="btn btn-outline-dark">  
+        <%= link_to 'Buy This Plant - €30', 'https://buy.stripe.com/test_00g6p9fAL0GF24wfYZ' %> 
+      </p>
+      <p class="card-text"><small class="text-muted">limited remain</small></p>
+    </div>
+  </div>
+  <div class="card" >
+    <img src="https://images.unsplash.com/photo-1604762512526-b7ce049b5764?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">snake plant</h5>
+      <p class="card-text">the perfect green addition to your desk or tabletop. always a favourite.</p>
+      <p class="btn btn-outline-dark">  
+        <%= link_to 'Buy This Plant - €30', 'https://buy.stripe.com/test_00g6p9fAL0GF24wfYZ' %> 
+      </p>
+      <p class="card-text"><small class="text-muted">limited remain</small></p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<meta charset="utf-8">
+
+
+
+
+
+ </body>
+ </html>
+
+
+
