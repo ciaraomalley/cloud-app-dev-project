@@ -23935,3 +23935,356 @@ ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/b
   
 ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
   
+Started GET "/" for ::1 at 2022-04-27 19:16:00 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 630.9ms | Allocations: 98404)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/user/_session_manager.html.erb:1
+  Rendered user/_session_manager.html.erb (Duration: 15.0ms | Allocations: 8653)
+  Rendered layouts/_navbar.html.erb (Duration: 16.8ms | Allocations: 9127)
+  Rendered layouts/_alerts.html.erb (Duration: 0.8ms | Allocations: 237)
+  Rendered layout layouts/application.html.erb (Duration: 651.7ms | Allocations: 108551)
+Completed 200 OK in 665ms (Views: 655.0ms | ActiveRecord: 1.1ms | Allocations: 111834)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/railties-7.0.2.3/lib/rails/rack/logger.rb:36:in `call_app'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/railties-7.0.2.3/lib/rails/rack/logger.rb:25:in `block in call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/railties-7.0.2.3/lib/rails/rack/logger.rb:25:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger_silence.rb:18:in `block in silence'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger_thread_safe_level.rb:43:in `log_at'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger_silence.rb:18:in `silence'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger_silence.rb:18:in `block in silence'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger_thread_safe_level.rb:43:in `log_at'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger_silence.rb:18:in `silence'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:11:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/activesupport-7.0.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/actionpack-7.0.2.3/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/railties-7.0.2.3/lib/rails/engine.rb:530:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/puma-5.6.4/lib/puma/configuration.rb:252:in `call'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/puma-5.6.4/lib/puma/request.rb:77:in `block in handle_request'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/puma-5.6.4/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/puma-5.6.4/lib/puma/request.rb:76:in `handle_request'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/puma-5.6.4/lib/puma/server.rb:441:in `process_client'
+	from /Users/ciara/.rvm/gems/ruby-3.1.1/gems/puma-5.6.4/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-05-02 15:53:51 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 78.9ms | Allocations: 35552)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/user/_session_manager.html.erb:1
+  Rendered user/_session_manager.html.erb (Duration: 18.0ms | Allocations: 8765)
+  Rendered layouts/_navbar.html.erb (Duration: 19.4ms | Allocations: 9239)
+  Rendered layouts/_alerts.html.erb (Duration: 0.9ms | Allocations: 238)
+  Rendered layout layouts/application.html.erb (Duration: 108.1ms | Allocations: 45808)
+Completed 200 OK in 161ms (Views: 123.3ms | ActiveRecord: 1.3ms | Allocations: 49092)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/posts" for ::1 at 2022-05-02 15:54:05 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:2
+  Rendered posts/_post.html.erb (Duration: 21.4ms | Allocations: 4712)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:2
+  Rendered posts/_post.html.erb (Duration: 2.5ms | Allocations: 799)
+  Rendered posts/index.html.erb within layouts/application (Duration: 55.5ms | Allocations: 12136)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/user/_session_manager.html.erb:1
+  Rendered user/_session_manager.html.erb (Duration: 2.1ms | Allocations: 1010)
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 1187)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | Allocations: 13697)
+Completed 200 OK in 82ms (Views: 60.0ms | ActiveRecord: 1.5ms | Allocations: 16729)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/posts/new" for ::1 at 2022-05-02 15:54:09 +0100
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 24.9ms | Allocations: 3838)
+  Rendered posts/new.html.erb within layouts/application (Duration: 32.5ms | Allocations: 5907)
+  Rendered user/_session_manager.html.erb (Duration: 0.3ms | Allocations: 193)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 359)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 6629)
+Completed 200 OK in 49ms (Views: 34.1ms | ActiveRecord: 0.4ms | Allocations: 9474)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started DELETE "/users/sign_out" for ::1 at 2022-05-02 15:54:13 +0100
+Processing by Users::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.1ms | Allocations: 3356)
+
+
+Started GET "/" for ::1 at 2022-05-02 15:54:13 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 3142)
+  Rendered user/_session_manager.html.erb (Duration: 2.7ms | Allocations: 223)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 389)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 36)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3907)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 4226)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/posts" for ::1 at 2022-05-02 15:54:15 +0100
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:2
+  Rendered posts/_post.html.erb (Duration: 2.3ms | Allocations: 913)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_post.html.erb:2
+  Rendered posts/_post.html.erb (Duration: 2.1ms | Allocations: 783)
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 4375)
+  Rendered user/_session_manager.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 299)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4999)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.5ms | Allocations: 5293)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/posts/new" for ::1 at 2022-05-02 15:54:17 +0100
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 263)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-02 15:54:17 +0100
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 717)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.1ms | Allocations: 4599)
+  Rendered user/_session_manager.html.erb (Duration: 0.3ms | Allocations: 127)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 5285)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 7009)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-05-02 15:54:22 +0100
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 120)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2621)
+  Rendered user/_session_manager.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3226)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 4006)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-05-02 15:54:24 +0100
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 259ms (ActiveRecord: 0.4ms | Allocations: 3862)
+
+
+Started GET "/posts/new" for ::1 at 2022-05-02 15:54:24 +0100
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.9ms | Allocations: 919)
+  Rendered posts/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2701)
+  Rendered user/_session_manager.html.erb (Duration: 0.3ms | Allocations: 189)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 355)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 33)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3396)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 0.3ms | Allocations: 5201)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/about" for ::1 at 2022-05-02 15:54:27 +0100
+Processing by AboutController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering about/about.html.erb within layouts/application
+  Rendered about/about.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1979)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/user/_session_manager.html.erb:1
+  Rendered user/_session_manager.html.erb (Duration: 2.2ms | Allocations: 1202)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1422)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4054)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 4855)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/" for ::1 at 2022-05-02 15:54:33 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2968)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/user/_session_manager.html.erb:1
+  Rendered user/_session_manager.html.erb (Duration: 1.9ms | Allocations: 1013)
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 1179)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4510)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 4807)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/" for ::1 at 2022-05-02 15:54:34 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2977)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/user/_session_manager.html.erb:1
+  Rendered user/_session_manager.html.erb (Duration: 3.2ms | Allocations: 1013)
+  Rendered layouts/_navbar.html.erb (Duration: 4.4ms | Allocations: 1179)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4519)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 4797)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+Started GET "/" for ::1 at 2022-05-02 15:56:43 +0100
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 128.2ms | Allocations: 12121)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/user/_session_manager.html.erb:1
+  Rendered user/_session_manager.html.erb (Duration: 12.1ms | Allocations: 1013)
+  Rendered layouts/_navbar.html.erb (Duration: 13.9ms | Allocations: 1179)
+  Rendered layouts/_alerts.html.erb (Duration: 0.2ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 143.9ms | Allocations: 13663)
+Completed 200 OK in 150ms (Views: 146.6ms | ActiveRecord: 0.5ms | Allocations: 13941)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+Started GET "/posts/new" for ::1 at 2022-05-02 15:56:49 +0100
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.0ms | Allocations: 917)
+  Rendered posts/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2595)
+  Rendered user/_session_manager.html.erb (Duration: 0.3ms | Allocations: 186)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 352)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3282)
+Completed 200 OK in 19ms (Views: 12.4ms | ActiveRecord: 0.1ms | Allocations: 4916)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap/scss/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-icons/font/bootstrap-icons"):
+  
